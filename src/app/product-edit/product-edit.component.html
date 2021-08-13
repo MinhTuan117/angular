@@ -1,0 +1,22 @@
+<div class="m-5">
+    <h2>Edit Product</h2>
+    <form action="">
+        <div class="mb-3">
+            <label for="">Name</label>
+            <input type="text" class="form-control" [(ngModel)]="product.name" name="name" />
+        </div>
+        <div class="mb-3">
+            <label for="">Ảnh</label>
+            <input type="text" class="form-control" [(ngModel)]="product.img" name="img" />
+        </div>
+        <div class="mb-3">
+            <label for="">Price</label>
+            <input type="text" class="form-control" [(ngModel)]="product.price" name="price" />
+        </div>
+        <div class="mb-3">
+            <label for="">Mô tả</label>
+            <textarea type="text" class="form-control" [(ngModel)]="product.desc" name="desc"></textarea>
+        </div>
+        <button class="btn btn-primary" (click)="onUpdateProduct()">Update</button>
+    </form>
+</div>
